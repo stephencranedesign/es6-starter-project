@@ -2,10 +2,10 @@ import json from 'rollup-plugin-json';
 import babel from 'rollup-plugin-babel';
 
 export default {
-  entry: 'src/onePage.js',
+  entry: 'src/calculator.js',
   format: 'umd',
-  banner: '/* OnePage by Stephen Crane */',
-  moduleName: 'onePage',
+  banner: '/* calculator by Stephen Crane */',
+  moduleName: 'calculator',
   plugins: [json(), babel()],
-  dest: 'dist/onePage.js' // equivalent to --output
+  dest: 'dist/calculator.js' // equivalent to --output
 };
