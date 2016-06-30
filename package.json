@@ -2,9 +2,13 @@
   "name": "es6-starter-project",
   "version": "0.0.2",
   "description": "base project that integrates babel / rollup to get unit testing with mocha out of the box",
+  "watch": {
+    "test": "{src,test}/*.js"
+  },
   "scripts": {
     "build": "rollup -c",
-    "test": "npm run build && mocha"
+    "test": "npm run build && mocha",
+    "watch": "npm-watch"
   },
   "author": "Stephen Crane",
   "license": "ISC",
@@ -16,6 +20,7 @@
     "chai": "^3.5.0",
     "ejs": "^2.3.4",
     "mocha": "^2.5.3",
+    "npm-watch": "^0.1.4",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-json": "^2.0.1"
   }

@@ -14,8 +14,13 @@
 		return a - b;
 	}
 
+	function multiply(a, b) {
+		return a * b;
+	}
+
 	exports.add = add;
 	exports.subtract = subtract;
+	exports.multiply = multiply;
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
